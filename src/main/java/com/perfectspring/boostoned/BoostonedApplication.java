@@ -10,8 +10,8 @@ public class BoostonedApplication {
 
 		var ctx = SpringApplication.run(BoostonedApplication.class, args);
 
-		MyFirstClass myFirstClass = ctx.getBean(MyFirstClass.class);
-		System.out.println(myFirstClass.sayHello());
+		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+		System.out.println(myFirstService.tellAStory());
 	}
 
 }
